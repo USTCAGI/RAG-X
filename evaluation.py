@@ -206,22 +206,15 @@ def evaluate_predictions_2(queries, ground_truths, predictions, domains, static_
 
 if __name__ == "__main__":
     # Load the model
-    #gpt-4o
-    # api_key = "sk-BIluUWvNvgXCC6vG1d00D3311a8b4b858422320dEe4dF3B5"
-    # base_url = "https://ai98.vip/v1"
-    #gpt3.5-turbo
-    # api_key = 'sk-HKNgoSXlMwmGldOt59Fa249c10Ff4551Bb2cDf938eAe48Ec'
-    # base_url = 'https://api.pumpkinaigc.online/v1'
-    api_key = "sk-TJwS6aC8jlIasWpOAa9b52C9410f4bBe89951eB28c2bD986"
-    base_url = "https://api.xiaoai.plus/v1"
+
+    api_key = "sk-..."
+    base_url = "https:"
     evaluation_model = load_chat_model(model_name="gpt-3.5-turbo", api_key=api_key, base_url=base_url, temperature=0)
 
     # Evaluate the predictions
     model_name = "gpt-4-turbo"
     knowledge_source = "llm_web"
     predictions_path = f"result/Meta-Llama-3.1-8B-Instruct_llm_kg_predictions_baseline.jsonl"
-    # predictions_path = r"/data/yu12345/AAAI-CRAG/result/Meta-Llama-3.1-8B-Instruct_llm_web_predictions_icl3.jsonl"
-    # predictions_path = r"/data/yu12345/AAAI-CRAG/result/Meta-Llama-3.1-8B-Instruct_llm_all_stage2_predictions.jsonl"
     with open(predictions_path, "r") as file:
         predictions = [json.loads(line) for line in file]
 
