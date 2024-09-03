@@ -165,8 +165,7 @@ if __name__ == "__main__":
     queries, ground_truths, predictions, contexts, domains, static_or_dynamics, question_types  = generate_predictions(dataset_path, rag_model, args.batch_size)
     
     # Save the predictions
-    # output_path = f"/data/yu12345/AAAI-CRAG/result/{model_name}_stage_3_predictions.jsonl"
-    output_path = f"/data/yu12345/AAAI-CRAG/result/{model_name}_{knowledge_source}_predictions.jsonl"
+    output_path = f"result/{model_name}_{knowledge_source}_predictions.jsonl"
     if not os.path.exists(os.path.dirname(output_path)):
         os.makedirs(os.path.dirname(output_path))
     with open(output_path, "w") as file:
