@@ -4,10 +4,8 @@ This repository is based on the 🥈 [solution](https://github.com/USTCAGI/CRAG-
 
 
 ### 📊 Dataset
-
-Our work significantly enhances the utility of this [dataset](https://huggingface.co/datasets/fishsure/RM3QA), which we have named RM3QA, standing for "A Real-time Multi-domain, Multi-format, Multi-source Question Answer Dataset for RAG."
-
-
+The CRAG dataset, central to the KDD Cup 2024, is particularly well-suited for real-world retrieval-based Question Answering (QA) tasks due to its diverse query types and document formats. To enhance its utility, we have significantly processed the original dataset, specifically converting the HTML-formatted web pages containing external knowledge into markdown (MD) format using Jina. This transformation makes the data more accessible and easier for large language models (LLMs) to utilize effectively. 
+Our refined version of the dataset, named RM3QA—'A Real-time Multi-domain, Multi-format, Multi-source Question Answer Dataset for RAG'—is now available [here](https://huggingface.co/datasets/fishsure/RM3QA).
 
 ## 🏁 Our RAG framework
 
