@@ -11,7 +11,7 @@ Our work significantly enhances the utility of this [dataset](https://huggingfac
 
 ## 🏁 Our RAG framework
 
-![framework1_00](.\README.assets\framework1_00.png)
+![framework1_00](./README.assets/framework1_00.png)
 
 Our RAG framework, RAG-X, employs an LLM Agent-based Router to intelligently select relevant knowledge sources from a curated mix of structured and unstructured data, including web pages and a mock API. Our retrieval process avoids web searches, focusing exclusively on the provided information sources. The retrieval process is divided into three steps: broad retrieval narrows down vast external knowledge, focused retrieval uses sparse, dense, or hybrid methods to identify key information, and rank refinement ensures the final output is accurate and prioritized.  After retrieval, we enhance the LLM's reasoning with noise chunks, Chain of Thought (CoT), and In-Context Learning (ICL), leading to more  relevant responses.
 
