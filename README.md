@@ -2,6 +2,7 @@
 
 This repository is based on the 🥈 [solution](https://github.com/USTCAGI/CRAG-in-KDD-Cup2024) of [Meta KDD Cup '24 CRAG: Comphrensive RAG Benchmark](https://www.aicrowd.com/challenges/meta-comprehensive-rag-benchmark-kdd-cup-2024) !
 
+For more information, visit our official homepage at https://ustc-rag-x.github.io/, and you can read our paper at https://arxiv.org/abs/2409.13694.
 
 ### 📊 Dataset
 The CRAG dataset, central to the KDD Cup 2024, is particularly well-suited for real-world retrieval-based Question Answering (QA) tasks due to its diverse query types and document formats. To enhance its utility, we have significantly processed the original dataset, specifically converting the HTML-formatted web pages containing external knowledge into markdown (MD) format using Jina. This transformation makes the data more accessible and easier for large language models (LLMs) to utilize effectively. 
